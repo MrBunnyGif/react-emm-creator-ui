@@ -1,0 +1,56 @@
+body {
+	padding: .5rem;
+}
+
+.d-flex {
+	display: flex;
+}
+
+.justify-between {
+	justify-content: space-between;
+}
+
+.my-1 {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+td.editable {
+	position: relative;
+}
+
+td.editable .edit-btn {
+	position: absolute;
+	background: #333;
+	color: white;
+	padding: 0.125rem 1rem;
+	top: 0;
+	right: 0;
+	cursor: copy;
+	z-index: 1;
+	display: none;
+}
+
+td.editable:hover .edit-btn {
+	display: block;
+}
+
+.limited-input {
+	max-width: 100px;
+	border: none;
+	outline: 1px solid;
+	padding: 0;
+	border-radius: 0;
+	margin-right: 1rem;
+}
+.limited-input:hover{
+	outline: 1px solid #40a9ff;
+}
+
+.limited-input[type="text"]{
+	padding: .25rem;
+}
+
+.color-controller .ant-form-item-control-input-content{
+	display: flex;
+}
